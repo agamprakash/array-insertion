@@ -20,7 +20,7 @@ jobs:
         setup-command: make
         command: make test
         timeout: 10
-        max-score: 2
+        max-score: 5
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
