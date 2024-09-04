@@ -29,36 +29,51 @@ int main() {
 // Function to insert an element at the end of the array
 void insertAtEnd(int arr[], int element) {
     //TODO: Complete this function to insert an element at the end of the array using inputs arr and element
-    
-
-
-
-
-
+   int i;
+    // Find the first unused position in the array
+    for (i = 0; arr[i] != 0; i++);
+    arr[i] = element;
 }
+
+
+
+
+
+
 
 // Function to insert an element at the beginning of the array
 void insertAtBeginning(int arr[], int element) {
     //TODO: Complete this function to insert an element at the beginning of the array using inputs arr and element
-    
-
-
-
-
-
-
+   
+int i;
+    // Shift elements to the right
+    for (i = MAX_SIZE - 1; i > 0; i--) {
+        arr[i] = arr[i - 1];
+    }
+    arr[0] = element;
 }
+
+
+
+
+
+
 
 // Function to insert an element at a specified index in the array
 void insertAtIndex(int arr[], int element, int index) {
     //TODO: Complete this function to insert an element at the end of the array using inputs arr, element, and index
     
 
-
-
-
-
+int i;
+    // Shift elements to the right
+    for (i = MAX_SIZE - 1; i > index; i--) {
+        arr[i] = arr[i - 1];
+    }
+    arr[index] = element;
 }
+
+
+
 
 //--------------------------------------------DONT CHANGE THE CODE UNDERNEATH THIS-----------------------------------------
 
